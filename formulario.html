@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário médico</title>
+    </head>
+    <body>
+        <form method="post" action="http://labs.edysegura.com/requests/">
+            <div>
+                <h1>Informações Pessoais</h1>
+                <label>Nome:</label>
+                <input type="text" name="nome"><br>
+                <label>Endereço:</label>
+                <input type="text" name="endereco"><br>
+                <label>Cidade:</label>
+                <input type="text" name="cidade">
+            </div>
+            <div>
+                <h1>Histórico Médico</h1>
+                <input type="checkbox" name="doenca[]" value="dengue">
+                <label>Dengue</label><br>
+                <input type="checkbox" name="doenca[]" value="zica">
+                <label>Zica</label><br>
+                <input type="checkbox" name="doenca[]" value="chikungunya">
+                <label>Chikungunya</label><br>
+                <input type="checkbox" name="doenca[]" value="gripe">
+                <label>Gripe</label>
+             </div>
+            <div>
+                <h1>Medicação Atual</h1>
+                <label>Utiliza algum medicamento?</label><br>
+                <input type="radio" name="opcao" value="sim">
+                <label>Sim</label><br>
+                <input type="radio" name="opcao" value="nao">
+                <label>Não</label><br>
+                <label>Quais?</label><br>
+                <textarea name="descricao"></textarea>
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
