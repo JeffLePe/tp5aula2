@@ -1,0 +1,56 @@
+#div1 {
+    border: solid 2px;
+    margin: 5px auto;
+    padding: 10px;
+    width: 700px;
+    background-color: #dedcdc;
+    padding-left: 30px;
+}
+
+#div2 {
+    border: solid 2px;
+    margin: 5px auto;
+    padding: 10px;
+    width: 700px;
+    background-color: #dedcdc;
+    padding-left: 30px;
+}
+
+#div3 {
+    border: solid 2px;
+    margin: 5px auto;
+    padding: 10px;
+    width: 700px;
+    background-color: #dedcdc;
+    padding-left: 30px;
+}
+
+#divform {
+    margin: auto;
+    width: 800px;
+}
+
+textarea {
+    display: inline-block;
+    width: 670px;
+}
+
+.inf {
+    display: inline-block;
+    width: 90px;
+    padding: 3px;
+}
+
+.campoinf {
+    width: 400px;
+}
+
+h1 {
+    font-family: Verdana;
+    text-align: center;
+}
+
+#botao {
+    margin: auto;
+    width: 50px;
+}

@@ -3,40 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>Formulário médico</title>
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
     </head>
     <body>
+        
         <form method="post" action="http://labs.edysegura.com/requests/">
-            <div>
-                <h1>Informações Pessoais</h1>
-                <label>Nome:</label>
-                <input type="text" name="nome"><br>
-                <label>Endereço:</label>
-                <input type="text" name="endereco"><br>
-                <label>Cidade:</label>
-                <input type="text" name="cidade">
+            <div id="divform">
+                <div id="div1">
+                    <h1>Informações Pessoais</h1>
+                    <label class="inf">Nome:</label>
+                    <input type="text" name="nome" class="campoinf"><br>
+                    <label class="inf">Endereço:</label>
+                    <input type="text" name="endereco" class="campoinf"><br>
+                    <label class="inf">Cidade:</label>
+                    <input type="text" name="cidade" class="campoinf">
+                </div>
+                <div id="div2">
+                    <h1>Histórico Médico</h1>
+                    <input type="checkbox" name="doenca[]" value="dengue">
+                    <label>Dengue</label><br>
+                    <input type="checkbox" name="doenca[]" value="zica">
+                    <label>Zica</label><br>
+                    <input type="checkbox" name="doenca[]" value="chikungunya">
+                    <label>Chikungunya</label><br>
+                    <input type="checkbox" name="doenca[]" value="gripe">
+                    <label>Gripe</label>
+                </div>
+                <div id="div3">
+                    <h1>Medicação Atual</h1>
+                    <label>Utiliza algum medicamento?</label><br>
+                    <input type="radio" name="opcao" value="sim">
+                    <label>Sim</label><br>
+                    <input type="radio" name="opcao" value="nao">
+                    <label>Não</label><br>
+                    <label>Quais?</label><br>
+                    <textarea name="descricao" rows="10" cols="50"></textarea>
+                </div>
+                <input type="submit" value="Enviar" id="botao">
             </div>
-            <div>
-                <h1>Histórico Médico</h1>
-                <input type="checkbox" name="doenca[]" value="dengue">
-                <label>Dengue</label><br>
-                <input type="checkbox" name="doenca[]" value="zica">
-                <label>Zica</label><br>
-                <input type="checkbox" name="doenca[]" value="chikungunya">
-                <label>Chikungunya</label><br>
-                <input type="checkbox" name="doenca[]" value="gripe">
-                <label>Gripe</label>
-             </div>
-            <div>
-                <h1>Medicação Atual</h1>
-                <label>Utiliza algum medicamento?</label><br>
-                <input type="radio" name="opcao" value="sim">
-                <label>Sim</label><br>
-                <input type="radio" name="opcao" value="nao">
-                <label>Não</label><br>
-                <label>Quais?</label><br>
-                <textarea name="descricao"></textarea>
-            </div>
-            <input type="submit" value="Enviar">
         </form>
+        
     </body>
 </html>
